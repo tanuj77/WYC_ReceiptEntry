@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ReceiptEntry</string>
+    <string name="CompanyId">Company ID</string>
+    <string name="Branch">Branch Name</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="CustomId">Customer ID :</string>
+    <string name="Password">Password :</string>
+    <string name="SaveCredentials">Save Credentials</string>
+    <string name="Submit">  Submit  </string>
+
+    <string name="AirlineCode">Airline Code:</string>
+    <string name="BrnachName">Branch Name:</string>
+    <string name="StartDate">Start Date:</string>
+    <string name="EndDate">End Date:</string>
+    <string name="BSP">BSP/Purchase/XO/All:</string>
+    <string name="menu_settings">Settings</string>
+
+
+    <string name="FCM_PREF">com.ccs.ccs81.wyc_receiptentry.fcm_pref</string>
+    <string name="FCM_TOKEN">com.ccs.ccs81.wyc_receiptentry.fcm_token</string>
+</resources>
+
+

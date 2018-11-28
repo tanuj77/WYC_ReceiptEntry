@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CornflowerBlue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ccs.ccs81.wyc_receiptentry.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:scaleType="fitCenter"
+            android:gravity="top|start"
+            android:src="@drawable/webyatralogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="ReceiptEntry - Login"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/White" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="@dimen/marginbottom"
+        android:layout_marginLeft="@dimen/marginleft"
+        android:layout_marginRight="@dimen/marginright"
+       android:padding="@dimen/padding"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/airoplane" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/usericon2" />
+
+        <EditText
+            android:id="@+id/et_companyid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/companyimage"
+            android:textSize="@dimen/text_size"
+            android:drawablePadding="10dp"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:drawableLeft="@drawable/usernaemimage"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:drawableLeft="@drawable/passwordimage"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textSize="@dimen/text_size"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+        <Spinner
+            android:id="@+id/spinnerfinancialyear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="@dimen/button1_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="@string/Submit"
+            android:textColor="#FAF5FA"
+            android:textSize="@dimen/text_size" />
+
+
+
+        <ProgressBar
+            android:id="@+id/pbCirular"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/progressdialog" />
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

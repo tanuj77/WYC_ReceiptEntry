@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Black"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText"/>
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+    <ListView android:id="@+id/list_customer" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_marginTop="50dip"
+        android:paddingLeft="15dip" android:paddingRight="15dip" android:paddingTop="20dip"
+        />
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_alignParentBottom="true">
+        <ProgressBar
+            android:id="@+id/pbCirular"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/progressdialog" />
+        <Button
+            android:id="@+id/button_Syncdataonserver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sync Selected Data On Server"/>
+    </LinearLayout>
+</RelativeLayout>
