@@ -35,7 +35,7 @@ public class PartyDropdownWebservice {
     }
 
     /**
-     * Set Envelope
+     * Set Envelopeeeeee
      */
     protected void SetEnvelope(String appUrl) {
         url = appUrl + "WSMP_GetParty.asmx";
